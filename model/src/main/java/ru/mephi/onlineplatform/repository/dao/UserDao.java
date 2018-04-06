@@ -1,4 +1,4 @@
-package ru.mephi.onlineplatform.repository;
+package ru.mephi.onlineplatform.repository.dao;
 
 import ru.mephi.onlineplatform.entities.SystemRole;
 import ru.mephi.onlineplatform.entities.User;
@@ -12,9 +12,11 @@ public interface UserDao {
 
     User save(User user);
 
-    User edit(Long id, User user);
+    User edit(Long id, User user) throws Exception;
 
-    void delete(Long id);
+    void delete(Long id) throws Exception;
+
+    User findById(Long id) throws Exception;
 
     List<User> selectByRole(SystemRole systemRole);
 }
