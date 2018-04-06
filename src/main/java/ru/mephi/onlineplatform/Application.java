@@ -1,5 +1,7 @@
 package ru.mephi.onlineplatform;
 
+import ru.mephi.onlineplatform.utils.FileUtils;
+
 /**
  * @author Stanislav_Semichevskiy
  */
